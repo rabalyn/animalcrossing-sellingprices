@@ -18,6 +18,10 @@ const routes = [
     path: "/shells",
     name: "Shells",
     component: () => import("../views/Shells.vue")
+  },
+  {
+    path: "*",
+    redirect: "/fish"
   }
 ];
 
