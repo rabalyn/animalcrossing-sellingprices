@@ -21,8 +21,8 @@ import de_de from "./locales/de_de/translation.js";
 i18next.init({
   lng: "de",
   resources: {
-    de: { translation: de_de }
-  }
+    de: { translation: de_de },
+  },
 });
 
 const i18n = new VueI18Next(i18next);
@@ -33,5 +33,5 @@ new Vue({
   router,
   store,
   i18n,
-  render: h => h(App)
+  render: (h) => h(App),
 }).$mount("#app");
